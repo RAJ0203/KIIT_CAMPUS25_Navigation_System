@@ -53,3 +53,18 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Pytest
+.pytest_cache/
+
+# Environment secrets
+.env
