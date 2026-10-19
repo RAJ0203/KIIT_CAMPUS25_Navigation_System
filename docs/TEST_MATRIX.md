@@ -405,6 +405,50 @@ A valid route request proceeds to the route engine.
 
 ---
 
+### AUTH09 — Expired JWT
+
+**Purpose:**
+
+Verify that an expired JWT cannot access a protected endpoint.
+
+**Test:**
+
+Send a request to `/auth/me` using a correctly signed JWT whose expiration time is in the past.
+
+**Expected:**
+
+- The request is rejected.
+- The response status is `401 Unauthorized`.
+
+**Automated Test:** `test_expired_token_rejected`
+
+**Status:** Passed locally; shared integration pending.
+
+---
+
+### AUTH10 — Password Hash Verification
+
+**Purpose:**
+
+Verify that user passwords are hashed before storage and that password verification works correctly.
+
+**Test:**
+
+Register a user, retrieve the user record from the test database, and verify the stored password hash.
+
+**Expected:**
+
+- The stored password hash differs from the plaintext password.
+- The correct password verifies successfully.
+- An incorrect password fails verification.
+- The API response does not expose the password hash.
+
+**Automated Test:** `test_password_is_hashed_not_plaintext`
+
+**Status:** Passed locally; shared integration pending.
+
+---
+
 ## 7. Data Validation Tests
 
 | ID | Test | Expected Result | Status |
