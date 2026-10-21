@@ -1,5 +1,8 @@
+"use client";
+
 import type { Location } from "@/types/campus";
 import { buildRouteGeometry } from "@/lib/routeGeometry";
+import { motion, useReducedMotion } from "framer-motion";
 
 // PROVISIONAL canvas size. Confirm the real coordinate space with Kushagra.
 export const MAP_VIEWBOX = { width: 700, height: 450 };
@@ -8,12 +11,14 @@ interface CampusMapSvgProps {
   locations: Location[];
   floor: number;
   routePath?: string[];
+  playKey?: number;
 }
 
 export default function CampusMapSvg({
   locations,
   floor,
   routePath = [],
+  playKey = 0,
 }: CampusMapSvgProps) {
   const nodes = locations.filter((loc) => loc.floor === floor);
   const routeIds = new Set(routePath);
@@ -25,6 +30,12 @@ export default function CampusMapSvg({
     geometry && geometry.ok
       ? geometry.segments.filter((segment) => segment.floor === floor)
       : [];
+
+  // Walking avatar: follows the first drawn piece on this floor (path order only).
+  const reduceMotion = useReducedMotion();
+  const walkSegment = floorSegments.find((segment) => segment.nodes.length > 1);
+  const walkX = walkSegment ? walkSegment.nodes.map((n) => n.x) : [];
+  const walkY = walkSegment ? walkSegment.nodes.map((n) => n.y) : [];
 
   return (
     <svg
@@ -107,6 +118,25 @@ export default function CampusMapSvg({
           </g>
         );
       })}
+      {walkSegment && (
+        <motion.circle
+          key={`walk-${playKey}-${floor}`}
+          r={7}
+          fill="#ffffff"
+          stroke="#8ba4ff"
+          strokeWidth={2}
+          initial={{ cx: walkX[0], cy: walkY[0] }}
+          animate={
+            reduceMotion
+              ? { cx: walkX[walkX.length - 1], cy: walkY[walkY.length - 1] }
+              : { cx: walkX, cy: walkY }
+          }
+          transition={{
+            duration: reduceMotion ? 0 : (walkX.length - 1) * 0.9,
+            ease: "linear",
+          }}
+        />
+      )}
     </svg>
   );
 }

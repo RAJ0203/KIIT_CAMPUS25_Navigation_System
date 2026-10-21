@@ -10,6 +10,7 @@ export default function Home() {
   const [source, setSource] = useState("B018");
   const [destination, setDestination] = useState("B020");
   const [floor, setFloor] = useState(0);
+  const [playKey, setPlayKey] = useState(0);
   const [route, setRoute] = useState<RouteResponse | null>(null);
   const [searched, setSearched] = useState(false);
   const [locations, setLocations] = useState<Location[]>([]);
@@ -32,6 +33,7 @@ export default function Home() {
     }
     setRoute(result);
     setSearched(true);
+    setPlayKey((key) => key + 1);
     // Show the floor where the returned path starts (read from the path, no routing).
     if (result) {
       const start = locations.find((item) => item.id === result.path[0]);
@@ -273,11 +275,18 @@ export default function Home() {
                 <p className="mt-3 text-xs text-slate-500">
                   Click a step to show that floor on the map.
                 </p>
+                <button
+                  type="button"
+                  onClick={() => setPlayKey((key) => key + 1)}
+                  className="mt-3 rounded-lg border border-[var(--accent)]/30 px-3 py-1.5 text-xs font-medium text-[#e7f5c8] transition hover:bg-[var(--accent)]/10"
+                >
+                  Replay walk
+                </button>
               </div>
             )}
             <div className="p-3 sm:p-5">
               <div className="overflow-hidden rounded-xl border border-white/10 bg-[#0b100c] p-2 sm:p-4">
-                <CampusMapSvg locations={locations} floor={floor} routePath={route?.path ?? []} />
+                <CampusMapSvg locations={locations} floor={floor} routePath={route?.path ?? []} playKey={playKey} />
               </div>
               <div className="mt-4 flex flex-wrap items-center justify-between gap-3 px-1 pb-1">
                 <div className="flex items-center gap-4 text-xs text-slate-400">
