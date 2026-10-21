@@ -13,8 +13,14 @@ export default function Home() {
   const [searched, setSearched] = useState(false);
 
   function findRoute() {
-    setRoute(getMockRoute({ source, destination }));
+    const result = getMockRoute({ source, destination });
+    setRoute(result);
     setSearched(true);
+    // Show the floor where the returned path starts (read from the path, no routing).
+    if (result) {
+      const start = MOCK_LOCATIONS.find((item) => item.id === result.path[0]);
+      if (start) setFloor(start.floor);
+    }
   }
 
   const locations = MOCK_LOCATIONS;
@@ -191,7 +197,7 @@ export default function Home() {
               </div>
 
               <div className="flex items-center gap-1 self-start rounded-xl border border-white/10 bg-[#0b100c] p-1">
-                {[0, 1].map((floorNumber) => (
+                {[0, 1, 2, 3].map((floorNumber) => (
                   <button
                     key={floorNumber}
                     type="button"
