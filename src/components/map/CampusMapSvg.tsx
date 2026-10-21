@@ -1,4 +1,5 @@
 import type { Location } from "@/types/campus";
+import { buildRouteGeometry } from "@/lib/routeGeometry";
 
 // PROVISIONAL canvas size. Confirm the real coordinate space with Kushagra.
 export const MAP_VIEWBOX = { width: 700, height: 450 };
@@ -18,6 +19,13 @@ export default function CampusMapSvg({
   const routeIds = new Set(routePath);
   const hasRoute = routePath.length > 0;
 
+  // Split the backend path by floor; draw only the pieces on the floor being shown.
+  const geometry = hasRoute ? buildRouteGeometry(routePath, locations) : null;
+  const floorSegments =
+    geometry && geometry.ok
+      ? geometry.segments.filter((segment) => segment.floor === floor)
+      : [];
+
   return (
     <svg
       viewBox={`0 0 ${MAP_VIEWBOX.width} ${MAP_VIEWBOX.height}`}
@@ -34,6 +42,22 @@ export default function CampusMapSvg({
         >
           No locations available on this floor
         </text>
+      )}
+
+      {floorSegments.map(
+        (segment, index) =>
+          segment.nodes.length > 1 && (
+            <polyline
+              key={`route-${index}`}
+              points={segment.nodes.map((n) => `${n.x},${n.y}`).join(" ")}
+              fill="none"
+              stroke="#8ba4ff"
+              strokeWidth={3}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              opacity={0.9}
+            />
+          )
       )}
 
       {nodes.map((node) => {
