@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CampusMapSvg from "@/components/map/CampusMapSvg";
-import { IS_MOCK_DATA, MOCK_LOCATIONS, getMockRoute } from "@/mocks/mockCampus";
-import type { RouteResponse } from "@/types/campus";
+import { getLocations, findRoute as requestRoute, USE_MOCK } from "@/lib/api";
+import type { Location, RouteResponse } from "@/types/campus";
 import { buildRouteGeometry } from "@/lib/routeGeometry";
 
 export default function Home() {
@@ -12,19 +12,33 @@ export default function Home() {
   const [floor, setFloor] = useState(0);
   const [route, setRoute] = useState<RouteResponse | null>(null);
   const [searched, setSearched] = useState(false);
+  const [locations, setLocations] = useState<Location[]>([]);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [routeError, setRouteError] = useState<string | null>(null);
 
-  function findRoute() {
-    const result = getMockRoute({ source, destination });
+  useEffect(() => {
+    getLocations()
+      .then(setLocations)
+      .catch((error: Error) => setLoadError(error.message));
+  }, []);
+
+  async function findRoute() {
+    setRouteError(null);
+    let result: RouteResponse | null = null;
+    try {
+      result = await requestRoute({ source, destination });
+    } catch (error) {
+      setRouteError(error instanceof Error ? error.message : "Route request failed");
+    }
     setRoute(result);
     setSearched(true);
     // Show the floor where the returned path starts (read from the path, no routing).
     if (result) {
-      const start = MOCK_LOCATIONS.find((item) => item.id === result.path[0]);
+      const start = locations.find((item) => item.id === result.path[0]);
       if (start) setFloor(start.floor);
     }
   }
 
-  const locations = MOCK_LOCATIONS;
   const sourceLocation = locations.find((item) => item.id === source);
   const destinationLocation = locations.find((item) => item.id === destination);
   // Split the backend path into floor steps (reads the path only, no routing).
@@ -54,7 +68,7 @@ export default function Home() {
           </div>
         </header>
 
-        {IS_MOCK_DATA && (
+        {USE_MOCK && (
           <div className="mb-6 flex gap-3 rounded-xl border border-amber-300/20 bg-amber-300/[0.06] p-4 text-sm text-amber-100">
             <span className="text-lg">!</span>
             <div>
@@ -136,6 +150,12 @@ export default function Home() {
                 Find route <span className="ml-1">→</span>
               </button>
             </div>
+
+            {(loadError || routeError) && (
+              <p className="mt-4 rounded-xl border border-red-300/20 bg-red-300/[0.06] p-3 text-sm text-red-100">
+                {loadError ?? routeError}
+              </p>
+            )}
 
             <div className="mt-6 border-t border-white/10 pt-5">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
