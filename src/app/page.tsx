@@ -4,6 +4,7 @@ import { useState } from "react";
 import CampusMapSvg from "@/components/map/CampusMapSvg";
 import { IS_MOCK_DATA, MOCK_LOCATIONS, getMockRoute } from "@/mocks/mockCampus";
 import type { RouteResponse } from "@/types/campus";
+import { buildRouteGeometry } from "@/lib/routeGeometry";
 
 export default function Home() {
   const [source, setSource] = useState("B018");
@@ -26,6 +27,8 @@ export default function Home() {
   const locations = MOCK_LOCATIONS;
   const sourceLocation = locations.find((item) => item.id === source);
   const destinationLocation = locations.find((item) => item.id === destination);
+  // Split the backend path into floor steps (reads the path only, no routing).
+  const geometry = route ? buildRouteGeometry(route.path, locations) : null;
 
   return (
     <main className="campus-atmosphere min-h-screen px-4 py-6 text-[var(--foreground)] sm:px-6 lg:px-10 lg:py-9">
@@ -215,6 +218,43 @@ export default function Home() {
               </div>
             </div>
 
+            {geometry && geometry.ok && (
+              <div className="border-b border-white/10 px-5 py-4 text-sm sm:px-6">
+                <p className="font-medium text-slate-200">Route steps</p>
+                <ol className="mt-3 space-y-2 text-slate-300">
+                  {geometry.segments.map((segment, index) => {
+                    const first = segment.nodes[0];
+                    const last = segment.nodes[segment.nodes.length - 1];
+                    const next = geometry.floorTransitions[index];
+                    return (
+                      <li key={`step-${index}`} className="space-y-2">
+                        <button
+                          type="button"
+                          onClick={() => setFloor(segment.floor)}
+                          className="text-left hover:text-white"
+                        >
+                          Floor {segment.floor}: {first.id}
+                          {last.id !== first.id ? ` → ${last.id}` : ""}
+                        </button>
+                        {next && (
+                          <p className="text-amber-200/80">
+                            Take the stairs: Floor {next.fromFloor} → Floor {next.toFloor}
+                          </p>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ol>
+                {geometry.blockTransitions.map((change, index) => (
+                  <p key={`block-${index}`} className="mt-2 text-slate-400">
+                    Block {change.fromBlock} → Block {change.toBlock} (between {change.fromId} and {change.toId})
+                  </p>
+                ))}
+                <p className="mt-3 text-xs text-slate-500">
+                  Click a step to show that floor on the map.
+                </p>
+              </div>
+            )}
             <div className="p-3 sm:p-5">
               <div className="overflow-hidden rounded-xl border border-white/10 bg-[#0b100c] p-2 sm:p-4">
                 <CampusMapSvg locations={locations} floor={floor} routePath={route?.path ?? []} />
