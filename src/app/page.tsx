@@ -307,7 +307,7 @@ export default function Home() {
 
         <footer className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <p>KIIT Campus Navigator · Frontend development preview</p>
-          <p>Route computation remains the backend's responsibility.</p>
+          <p>Route computation remains the backend&apos;s responsibility.</p>
         </footer>
       </div>
     </main>
