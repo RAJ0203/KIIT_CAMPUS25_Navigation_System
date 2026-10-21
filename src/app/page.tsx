@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import CampusMapSvg from "@/components/map/CampusMapSvg";
@@ -124,7 +124,7 @@ export default function Home() {
                 onClick={findRoute}
                 className="w-full rounded-xl bg-[var(--accent)] px-4 py-3.5 font-semibold text-slate-950 shadow-lg shadow-black/30 transition hover:bg-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:ring-offset-2 focus:ring-offset-slate-900"
               >
-                Find route <span className="ml-1">â†’</span>
+                Find route <span className="ml-1">→</span>
               </button>
             </div>
 
@@ -186,7 +186,7 @@ export default function Home() {
                 <p className="text-sm text-slate-400">Navigation workspace</p>
                 <h2 className="mt-1 text-lg font-semibold">Campus map</h2>
                 <p className="mt-1 text-sm text-slate-500">
-                  {sourceLocation?.name ?? source} <span className="mx-1 text-[var(--accent)]">â†’</span> {destinationLocation?.name ?? destination}
+                  {sourceLocation?.name ?? source} <span className="mx-1 text-[var(--accent)]">→</span> {destinationLocation?.name ?? destination}
                 </p>
               </div>
 
@@ -224,14 +224,14 @@ export default function Home() {
                     Selected route info
                   </span>
                 </div>
-                <p className="text-xs text-slate-500">Schematic preview Â· not to scale</p>
+                <p className="text-xs text-slate-500">Schematic preview · not to scale</p>
               </div>
             </div>
           </section>
         </section>
 
         <footer className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>KIIT Campus Navigator Â· Frontend development preview</p>
+          <p>KIIT Campus Navigator · Frontend development preview</p>
           <p>Route computation remains the backend's responsibility.</p>
         </footer>
       </div>

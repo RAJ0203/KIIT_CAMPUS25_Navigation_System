@@ -1,4 +1,4 @@
-﻿import type { Location } from "@/types/campus";
+import type { Location } from "@/types/campus";
 
 // PROVISIONAL canvas size. Confirm the real coordinate space with Kushagra.
 export const MAP_VIEWBOX = { width: 700, height: 450 };
