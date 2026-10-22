@@ -49,4 +49,39 @@ assert.deepEqual(g.blockTransitions, [
   { fromId: "T1", toId: "T2", fromBlock: "A", toBlock: "B" },
 ]);
 
+
+/* 6. Empty path: no nodes or drawable segments. */
+g = buildRouteGeometry([], MOCK_LOCATIONS);
+assert.equal(g.ok, true);
+assert.deepEqual(g.nodes, []);
+assert.deepEqual(g.segments, []);
+assert.deepEqual(g.floorTransitions, []);
+assert.deepEqual(g.blockTransitions, []);
+
+/* 7. Multiple floor changes preserve path order. */
+const multiFloorFixture = [
+  { id: "E0", name: "e0", block: "A", floor: 0, x: 10, y: 10 },
+  { id: "E1", name: "e1", block: "A", floor: 1, x: 20, y: 20 },
+  { id: "E2", name: "e2", block: "A", floor: 1, x: 30, y: 30 },
+  { id: "E3", name: "e3", block: "A", floor: 2, x: 40, y: 40 },
+];
+
+g = buildRouteGeometry(["E0", "E1", "E2", "E3"], multiFloorFixture);
+assert.equal(g.ok, true);
+assert.deepEqual(
+  g.segments.map((s) => [s.floor, s.nodes.map((n) => n.id)]),
+  [
+    [0, ["E0"]],
+    [1, ["E1", "E2"]],
+    [2, ["E3"]],
+  ]
+);
+assert.deepEqual(
+  g.floorTransitions.map((t) => [t.fromId, t.toId]),
+  [
+    ["E0", "E1"],
+    ["E2", "E3"],
+  ]
+);
+
 console.log("ALL CHECKS PASSED");

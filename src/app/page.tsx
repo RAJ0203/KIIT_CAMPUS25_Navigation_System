@@ -51,7 +51,7 @@ export default function Home() {
       <div className="mx-auto max-w-7xl">
         <header className="mb-8 flex flex-col gap-5 border-b border-white/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--accent)]/20 bg-[var(--accent)]/10 text-xl font-bold text-[#e7f5c8]">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--accent)]/20 bg-[var(--accent)]/10 text-xl font-bold text-[#D9F0FF]">
               C25
             </div>
             <div>
@@ -84,7 +84,7 @@ export default function Home() {
         )}
 
         <section className="grid gap-6 lg:grid-cols-[340px_minmax(0,1fr)]">
-          <aside className="h-fit rounded-2xl border border-white/10 bg-[#121b14] p-5 shadow-2xl shadow-black/10 sm:p-6">
+          <aside className="h-fit rounded-2xl border border-white/10 bg-[#101B2D] p-5 shadow-2xl shadow-black/10 sm:p-6">
             <div className="mb-6">
               <p className="text-sm text-slate-400">Plan your journey</p>
               <h2 className="mt-1 text-xl font-semibold">Where to?</h2>
@@ -103,7 +103,7 @@ export default function Home() {
                     setSearched(false);
                     setRoute(null);
                   }}
-                  className="w-full rounded-xl border border-white/10 bg-[#18251a] px-3 py-3 text-sm text-white outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
+                  className="w-full rounded-xl border border-white/10 bg-[#14243B] px-3 py-3 text-sm text-white outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
                 >
                   {locations.map((location) => (
                     <option key={location.id} value={location.id}>
@@ -134,7 +134,7 @@ export default function Home() {
                     setSearched(false);
                     setRoute(null);
                   }}
-                  className="w-full rounded-xl border border-white/10 bg-[#18251a] px-3 py-3 text-sm text-white outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
+                  className="w-full rounded-xl border border-white/10 bg-[#14243B] px-3 py-3 text-sm text-white outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
                 >
                   {locations.map((location) => (
                     <option key={location.id} value={location.id}>
@@ -188,7 +188,7 @@ export default function Home() {
                     <p className="mb-2 text-sm font-medium text-slate-300">Ordered path</p>
                     <div className="flex flex-wrap items-center gap-2">
                       {route.path.map((node, index) => (
-                        <span key={`${node}-${index}`} className="rounded-lg border border-[var(--accent)]/20 bg-[var(--accent)]/10 px-2.5 py-1.5 text-xs text-[#e7f5c8]">
+                        <span key={`${node}-${index}`} className="rounded-lg border border-[var(--accent)]/20 bg-[var(--accent)]/10 px-2.5 py-1.5 text-xs text-[#D9F0FF]">
                           {node}
                         </span>
                       ))}
@@ -211,7 +211,7 @@ export default function Home() {
             </div>
           </aside>
 
-          <section className="min-w-0 overflow-hidden rounded-2xl border border-white/10 bg-[#121b14] shadow-2xl shadow-black/10">
+          <section className="min-w-0 overflow-hidden rounded-2xl border border-white/10 bg-[#101B2D] shadow-2xl shadow-black/10">
             <div className="flex flex-col gap-4 border-b border-white/10 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
               <div>
                 <p className="text-sm text-slate-400">Navigation workspace</p>
@@ -221,7 +221,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex items-center gap-1 self-start rounded-xl border border-white/10 bg-[#0b100c] p-1">
+              <div className="flex items-center gap-1 self-start rounded-xl border border-white/10 bg-[#080F20] p-1">
                 {[0, 1, 2, 3].map((floorNumber) => (
                   <button
                     key={floorNumber}
@@ -278,14 +278,14 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={() => setPlayKey((key) => key + 1)}
-                  className="mt-3 rounded-lg border border-[var(--accent)]/30 px-3 py-1.5 text-xs font-medium text-[#e7f5c8] transition hover:bg-[var(--accent)]/10"
+                  className="mt-3 rounded-lg border border-[var(--accent)]/30 px-3 py-1.5 text-xs font-medium text-[#D9F0FF] transition hover:bg-[var(--accent)]/10"
                 >
                   Replay walk
                 </button>
               </div>
             )}
             <div className="p-3 sm:p-5">
-              <div className="overflow-hidden rounded-xl border border-white/10 bg-[#0b100c] p-2 sm:p-4">
+              <div className="overflow-hidden rounded-xl border border-white/10 bg-[#080F20] p-2 sm:p-4">
                 <CampusMapSvg locations={locations} floor={floor} routePath={route?.path ?? []} playKey={playKey} />
               </div>
               <div className="mt-4 flex flex-wrap items-center justify-between gap-3 px-1 pb-1">
@@ -313,4 +313,3 @@ export default function Home() {
     </main>
   );
 }
-
