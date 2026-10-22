@@ -1,0 +1,152 @@
+
+@import "tailwindcss";
+
+:root {
+  --background: #080F20;
+  --foreground: #F0F7FF;
+  --surface: rgba(13, 25, 46, 0.86);
+  --surface-raised: rgba(18, 36, 59, 0.93);
+  --border: rgba(125, 190, 255, 0.20);
+  --muted: #A8C4DF;
+  --accent: #62B6FF;
+  --accent-strong: #9AD5FF;
+  --success: #62B6FF;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: clip;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+select,
+input {
+  max-width: 100%;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  color-scheme: dark;
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: #080F20;
+  background: var(--accent);
+}
+
+/* Background image with a readable forest-green overlay */
+.campus-atmosphere {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.campus-atmosphere::before {
+  position: fixed;
+  z-index: -2;
+  inset: 0;
+  content: "";
+  background-image: url("/kiit-campus.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(7px);
+  transform: scale(1.04);
+}
+
+.campus-atmosphere::after {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(115deg, rgba(5, 12, 28, 0.95), rgba(10, 28, 54, 0.80)),
+    linear-gradient(rgba(12, 40, 72, 0.30), rgba(5, 12, 28, 0.90));
+  pointer-events: none;
+}
+
+.glass-panel {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
+}
+
+.lime-button {
+  border: 1px solid rgba(98, 182, 255, 0.38);
+  background: var(--accent);
+  color: #081426;
+  font-weight: 700;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.lime-button:hover {
+  background: var(--accent-strong);
+  transform: translateY(-1px);
+}
+
+.phone-float {
+  animation: campus-float 5s ease-in-out infinite;
+}
+
+.phone-route {
+  stroke-dasharray: 8 8;
+  animation: campus-route 1.8s linear infinite;
+}
+
+@keyframes campus-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes campus-route {
+  to { stroke-dashoffset: -32; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
