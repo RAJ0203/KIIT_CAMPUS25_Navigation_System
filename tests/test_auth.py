@@ -11,7 +11,11 @@ from sqlalchemy.orm import sessionmaker
 from backend.app.auth_router import router
 from backend.app.database import Base, get_db
 from backend.app.models import User
-from backend.app.security import verify_password
+from backend.app.security import (
+    hash_password,
+    verify_password,
+    decode_access_token,
+)
 
 
 @pytest.fixture()
@@ -184,6 +188,7 @@ def test_protected_endpoint_with_valid_token(client):
         },
     )
 
+    assert login.status_code == 200
     token = login.json()["access_token"]
 
     response = client.get(
@@ -213,3 +218,54 @@ def test_expired_token_rejected(client):
     )
 
     assert response.status_code == 401
+
+
+def test_malformed_password_hash_rejected():
+    assert not verify_password("StrongPass123", "invalid-hash")
+    assert not verify_password("StrongPass123", "")
+    assert not verify_password("StrongPass123", None)
+
+
+def test_unreasonable_password_hash_iterations_rejected():
+    low_iterations_hash = "pbkdf2_sha256$1$c2FsdA==$ZGlnZXN0"
+
+    high_iterations_hash = (
+        "pbkdf2_sha256$999999999$c2FsdA==$ZGlnZXN0"
+    )
+
+    assert not verify_password("StrongPass123", low_iterations_hash)
+    assert not verify_password("StrongPass123", high_iterations_hash)
+
+
+def test_malformed_jwt_subject_rejected():
+    secret = os.environ["JWT_SECRET_KEY"]
+
+    malformed_token = jwt.encode(
+        {
+            "sub": "not-a-user-id",
+            "iat": datetime.now(timezone.utc),
+            "exp": datetime.now(timezone.utc) + timedelta(minutes=5),
+        },
+        secret,
+        algorithm="HS256",
+    )
+
+    with pytest.raises(jwt.InvalidTokenError):
+        decode_access_token(malformed_token)
+
+
+def test_invalid_jwt_signature_rejected():
+    secret = os.environ["JWT_SECRET_KEY"]
+
+    token = jwt.encode(
+        {
+            "sub": "1",
+            "iat": datetime.now(timezone.utc),
+            "exp": datetime.now(timezone.utc) + timedelta(minutes=5),
+        },
+        secret + "-wrong",
+        algorithm="HS256",
+    )
+
+    with pytest.raises(jwt.InvalidTokenError):
+        decode_access_token(token)
