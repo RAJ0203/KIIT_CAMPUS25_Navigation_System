@@ -167,6 +167,24 @@ The exact node IDs and physical locations must come from the verified graph/data
 
 Do not invent physical locations or IDs.
 
+### Coordinate Provenance and Verification
+
+The `x` and `y` fields are numeric SVG/map coordinates when established by a reliable source. When a reliable coordinate has not been established, the value must be JSON `null`. Coordinates must not be fabricated or represented with placeholder numbers.
+
+An optional `metadata` object may preserve source and verification information, including:
+
+- `status`: `source-confirmed`, `provisional-transcription`, or `unresolved`
+- `source`: inspected source filename and page or section reference
+- `source_section`: separate section, table, or page reference when `source` is a filename
+- `notes`: concise provenance or reconciliation notes
+
+These are project-specific metadata conventions. They supplement the canonical data contract and do not introduce undocumented required top-level fields.
+
+Source confidence must be preserved. Source-confirmed records must not be silently represented as provisional, and provisional or unresolved records must not be silently represented as verified. Unresolved physical placeholders must be excluded from canonical location data until their identity is established. Provisional records may be retained only when their status is explicit in `metadata`.
+
+Room IDs preserve their source room labels, such as `A001`, `B018`, or `C203`. Lift metadata preserves source lift labels; lifts are not graph connectors. Corridor junctions, staircase access points, and entrances require a source-supported stable ID before they can be accepted as canonical locations.
+
+No edge weights, graph connections, or Dijkstra state belong in `locations.json`.
 ---
 
 ## 5. Canonical Node IDs
