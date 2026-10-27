@@ -185,7 +185,6 @@ Source confidence must be preserved. Source-confirmed records must not be silent
 Room IDs preserve their source room labels, such as `A001`, `B018`, or `C203`. Lift metadata preserves source lift labels; lifts are not graph connectors. Corridor junctions, staircase access points, and entrances require a source-supported stable ID before they can be accepted as canonical locations.
 
 No edge weights, graph connections, or Dijkstra state belong in `locations.json`.
-
 ---
 
 ## 5. Canonical Node IDs
