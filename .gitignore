@@ -68,3 +68,5 @@ venv/
 
 # Environment secrets
 .env
+# Local development database
+campus25.db
