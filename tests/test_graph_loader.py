@@ -374,7 +374,7 @@ def test_load_graph_data_rejects_invalid_location_floor(tmp_path, bad_floor):
 
     "bad_coordinate",
 
-    [True, "10", None, float("nan"), float("inf")],
+    [True, "10", float("nan"), float("inf")],
 
 )
 
@@ -908,3 +908,35 @@ def test_load_graph_data_rejects_duplicate_floor_connectors(tmp_path):
     with pytest.raises(ValueError, match="Duplicate floor connector"):
 
         load_graph_data(tmp_path)
+
+def test_load_graph_accepts_null_coordinates(tmp_path):
+    """Accept unverified coordinates while preserving graph routing."""
+    locations = [
+        valid_location("A", x=None, y=None),
+        valid_location("B", x=10, y=None),
+    ]
+
+    edges = [
+        {"from": "A", "to": "B", "weight": 5, "type": "corridor"},
+    ]
+
+    write_graph_files(
+        tmp_path,
+        locations,
+        edges,
+        floors=valid_floors(floors=[0]),
+    )
+
+    loaded_locations, graph = load_graph_data(tmp_path)
+
+    # Unverified coordinates remain null; no placeholder coordinates are added.
+    assert loaded_locations[0]["x"] is None
+    assert loaded_locations[0]["y"] is None
+    assert loaded_locations[1]["y"] is None
+
+    # Routing still works using graph edges and weights alone.
+    assert graph["A"] == [("B", 5)]
+    assert graph["B"] == [("A", 5)]
+    distance, path = dijkstra(graph, "A", "B")
+    assert distance == 5
+    assert path == ["A", "B"]

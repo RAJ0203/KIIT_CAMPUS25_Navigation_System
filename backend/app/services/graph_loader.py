@@ -1,4 +1,3 @@
-
 import json
 import math
 from pathlib import Path
@@ -155,6 +154,11 @@ def _validate_location(location: dict[str, Any]) -> None:
     for coordinate in ("x", "y"):
         value = location[coordinate]
 
+        # Allow coordinates to remain null until verified.
+        if value is None:
+            continue
+
+        # Validate any provided coordinate.
         if (
             isinstance(value, bool)
             or not isinstance(value, (int, float))
