@@ -565,3 +565,16 @@ def test_reject_connector_destination_that_is_not_staircase(tmp_path):
     write_graph_files(tmp_path, locations, edges, floors=floors)
     with pytest.raises(ValueError, match="destination.*staircase"):
         load_graph_data(tmp_path)
+
+
+
+def test_load_graph_data_rejects_self_loop_edge(tmp_path):
+    locations = [valid_location("A")]
+    edges = [
+        {"from": "A", "to": "A", "weight": 0, "type": "horizontal"}
+    ]
+
+    write_graph_files(tmp_path, locations, edges)
+
+    with pytest.raises(ValueError, match="Self-loop edges are not allowed"):
+        load_graph_data(tmp_path)

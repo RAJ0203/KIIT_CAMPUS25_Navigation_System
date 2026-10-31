@@ -90,7 +90,7 @@ class RouteRequest(BaseModel):
 
 
 class RouteResponse(BaseModel):
-    distance: int | float
+    distance: int
     path: list[str]
 
 

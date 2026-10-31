@@ -818,6 +818,11 @@ def load_graph_data(
 
 
 
+        if source == destination:
+            raise ValueError(f"Self-loop edges are not allowed: {source} -> {destination}")
+
+
+
         if isinstance(weight, bool) or not isinstance(weight, int):
 
             raise ValueError(

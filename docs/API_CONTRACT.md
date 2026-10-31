@@ -220,7 +220,7 @@ The example values are illustrative and do not represent a verified campus route
 
 | Field | Type | Description |
 |---|---|---|
-| `distance` | Integer or Float | Total shortest-path distance in movement units |
+| `distance` | Integer | Total shortest-path distance in movement units |
 | `path` | Array of Strings | Ordered location IDs from source to destination |
 
 ### Response Requirements
