@@ -2,6 +2,9 @@
 
 Status: measured topology specification. This is not `data/edges.json` and contains no Dijkstra implementation.
 
+
+> **Current-status notice (2026-11-01):** This inventory preserves the original source transcription and its pre-canonicalization status labels. Later owner confirmations and graph promotions supersede individual `provisional`/`unresolved` dispositions in this historical table. For the current canonical edge set and promotion decisions, use `data/edges.json`, `docs/MEASUREMENT_RECONCILIATION_LEDGER.md`, and `docs/A_BLOCK_CUMULATIVE_ROUTE_RECONCILIATION.md`. In particular, cumulative route steps 1–8, 14, 17–20 and 24–27 are currently represented; step 21 is held due to a 9-versus-14 conflict.
+
 ## Interpretation and status rules
 
 - Horizontal weights are measured tile counts. One tile equals one movement unit.

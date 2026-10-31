@@ -1,5 +1,8 @@
 # Measurement Reconciliation
 
+> **Current canonicalization notice (2026-11-01):** This document preserves earlier source transcription. For current owner-confirmed endpoint mappings, canonical edges and unresolved conflicts, consult `MEASUREMENT_RECONCILIATION_LEDGER.md` and `A_BLOCK_CUMULATIVE_ROUTE_RECONCILIATION.md`. The latter supersedes earlier `null`/provisional A-block endpoint mappings where the owner has since confirmed exact room IDs.
+
+
 Status: provisional Phase 3 measured-edge inventory.
 
 This document preserves prior measurement transcriptions and the source-backed records read from `docs/source/KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx`. The original raw field notes are not present in the workspace. Values cited to the Master Team Coordination Document are verified against that document, but not against unavailable raw field notes.

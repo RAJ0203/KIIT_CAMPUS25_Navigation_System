@@ -1,6 +1,6 @@
 # Node Inventory
 
-Status: evidence-bounded preliminary inventory. This document establishes proposed graph-relevant node identities without creating canonical graph JSON.
+Status: historical evidence-bounded inventory. Canonical graph identities now live in `data/locations.json`; current owner-confirmed alias and consolidation decisions below supersede earlier provisional facility rows.
 
 ## Accessible source evidence
 
@@ -96,9 +96,6 @@ These entries are descriptive transcriptions from the accessible reconciliation 
 
 | Proposed node ID | Display label | Block | Floor | Category | Status | Source/evidence note |
 |---|---|---|---:|---|---|---|
-| `A-F0-FAC-IOT-LAB` | IoT lab | A | 0 | facility | provisional-transcription | Mentioned in B018 route description; exact map label pending |
-| `A-F0-FAC-PROJECT-LAB` | Project lab | A | 0 | facility | provisional-transcription | Mentioned in B018 route description; exact map label pending |
-| `A-F0-FAC-RESEARCH-LAB` | Research lab | A | 0 | facility | provisional-transcription | Mentioned in B018 route description; exact map label pending |
 | `A-F0-FAC-LADIES-WASHROOM` | Ladies' washroom | A | 0 | facility | source-confirmed | A/B ground-floor map JPEG; access point still requires topology mapping |
 | `A-F0-FAC-GENTS-WASHROOM` | Gents' washroom | A | 0 | facility | source-confirmed | A/B ground-floor map JPEG; access point still requires topology mapping |
 | `A-F0-FAC-STAFF-TOILET` | Staff toilet | A | 0 | facility | provisional-transcription | Mentioned in B018 route description; exact access point pending |
@@ -109,6 +106,19 @@ These entries are descriptive transcriptions from the accessible reconciliation 
 | `A-F0-LIFT-04` | Lift 4 | A | 0 | lift_metadata | provisional-transcription | Mentioned in B018 route description; metadata only |
 
 Lift entries above must not receive vertical graph edges.
+
+
+### Owner-confirmed A-block lab aliases (2026-11-01)
+
+The project owner clarified that the lab labels refer to the numbered room nodes, not separate physical facility vertices:
+
+| Canonical room ID | Owner-confirmed alias | Graph representation |
+|---|---|---|
+| `A004` | IoT lab | One room node; alias stored in `locations.json` metadata |
+| `A003` | Project lab | One room node; alias stored in `locations.json` metadata |
+| `A002` | Research lab | One room node; alias stored in `locations.json` metadata |
+
+The earlier provisional IDs `A-F0-FAC-IOT-LAB`, `A-F0-FAC-PROJECT-LAB`, and `A-F0-FAC-RESEARCH-LAB` are retired and removed from the canonical location list to avoid duplicate graph vertices for the same physical rooms. The names remain searchable through room metadata aliases.
 
 ### A/B ground-floor entrances
 
