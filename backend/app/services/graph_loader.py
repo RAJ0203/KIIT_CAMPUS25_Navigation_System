@@ -12,6 +12,7 @@ from typing import Any
 
 STAIR_COST = 26
 ALLOWED_EDGE_TYPES = {"horizontal", "stair"}
+STAIR_LOCATION_TYPES = {"stair", "stair_access"}
 
 
 
@@ -539,7 +540,7 @@ def _validate_floors(
 
 
 
-        if location_by_id[source].get("type") != "stair":
+        if location_by_id[source].get("type") not in STAIR_LOCATION_TYPES:
 
             raise ValueError(
 
@@ -571,7 +572,7 @@ def _validate_floors(
 
 
 
-        if location_by_id[destination].get("type") != "stair":
+        if location_by_id[destination].get("type") not in STAIR_LOCATION_TYPES:
 
             raise ValueError(
 
