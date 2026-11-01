@@ -19,6 +19,64 @@ export class ApiError extends Error {
   }
 }
 
+
+export interface AuthUser {
+  id: number;
+  username: string;
+  created_at: string;
+}
+
+export interface LoginResponse {
+  access_token: string;
+  token_type: string;
+  user: AuthUser;
+}
+
+export async function registerUser(
+  username: string,
+  password: string
+): Promise<AuthUser> {
+  const response = await fetch(`${API_BASE_URL}/auth/register`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username, password }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new ApiError(
+      response.status,
+      data.detail ?? "Registration failed"
+    );
+  }
+
+  return data as AuthUser;
+}
+
+export async function loginUser(
+  username: string,
+  password: string
+): Promise<LoginResponse> {
+  const response = await fetch(`${API_BASE_URL}/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username, password }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new ApiError(
+      response.status,
+      data.detail ?? "Login failed"
+    );
+  }
+
+  return data as LoginResponse;
+}
+
+
 /** GET /locations - the canonical location list. */
 export async function getLocations(): Promise<Location[]> {
   if (USE_MOCK) {
@@ -105,6 +163,12 @@ export async function findRoute(
     headers,
     body: JSON.stringify(request),
   });
-  if (!response.ok) throw new ApiError(response.status, "POST /route failed");
+  if (!response.ok) {
+    const data = await response.json().catch(() => ({}));
+    throw new ApiError(
+      response.status,
+      data.detail ?? "POST /route failed"
+    );
+  }
   return (await response.json()) as RouteResponse;
 }

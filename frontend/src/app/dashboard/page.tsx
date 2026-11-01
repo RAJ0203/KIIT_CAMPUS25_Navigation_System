@@ -2,8 +2,14 @@
 
 import { useEffect, useMemo, useState } from "react";
 import CampusMapSvg from "@/components/map/CampusMapSvg";
+import AuthPanel from "@/components/auth/AuthPanel";
 import { motion } from "framer-motion";
-import { findRoute, getLocations, USE_MOCK } from "@/lib/api";
+import {
+  findRoute,
+  getLocations,
+  USE_MOCK,
+  type AuthUser,
+} from "@/lib/api";
 import type { Location, RouteResponse } from "@/types/campus";
 import "./dashboard.css";
 
@@ -18,6 +24,21 @@ export default function NavigationDashboard() {
   const [mapPage, setMapPage] = useState(1);
   const [activeFloor, setActiveFloor] = useState(0);
   const [playKey, setPlayKey] = useState(0);
+  const [token, setToken] = useState<string | null>(null);
+  const [authUser, setAuthUser] = useState<AuthUser | null>(null);
+
+  function handleLogin(accessToken: string, user: AuthUser) {
+    setToken(accessToken);
+    setAuthUser(user);
+    setError("");
+  }
+
+  function handleLogout() {
+    setToken(null);
+    setAuthUser(null);
+    setRoute(null);
+    setError("");
+  }
 
 
   useEffect(() => {
@@ -83,14 +104,26 @@ export default function NavigationDashboard() {
 
     setSearching(true);
     try {
-      const result = await findRoute({ source, destination });
+      const result = await findRoute(
+        { source, destination },
+        token ?? undefined
+      );
       if (!result) {
         setError("No route is available for this pair in the current data.");
       } else {
         setRoute(result);
       }
-    } catch {
-      setError("Route request failed. Please check the backend connection and try again.");
+    } catch (err) {
+      if (err instanceof Error && "status" in err && err.status === 401) {
+        handleLogout();
+        setError("Your session expired. Please sign in again.");
+      } else {
+        setError(
+          err instanceof Error
+            ? err.message
+            : "Route request failed. Please check the backend connection."
+        );
+      }
     } finally {
       setSearching(false);
     }
@@ -98,6 +131,10 @@ export default function NavigationDashboard() {
 
   function locationLabel(location: Location) {
     return `${location.id} — ${location.name}`;
+  }
+
+  if (!token) {
+    return <AuthPanel onLogin={handleLogin} />;
   }
 
   return (
@@ -114,7 +151,17 @@ export default function NavigationDashboard() {
           <span className="system-dot" />
           <span>{USE_MOCK ? "DEMO DATA MODE" : "LIVE API MODE"}</span>
           <span className="header-divider" />
-          <span className="header-tag">KIIT CAMPUS</span>
+          <span className="header-tag">
+            {authUser?.username ?? "KIIT CAMPUS"}
+          </span>
+
+          <button
+            type="button"
+            className="logout-button"
+            onClick={handleLogout}
+          >
+            Logout
+          </button>
         </div>
       </header>
 
