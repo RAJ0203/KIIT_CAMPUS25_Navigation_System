@@ -1,0 +1,809 @@
+[
+  {
+    "from": "STAIR_B_01_F0",
+    "to": "STAIR_B_01_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_01_F1",
+    "to": "STAIR_B_01_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_01_F2",
+    "to": "STAIR_B_01_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_02_F0",
+    "to": "STAIR_B_02_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_02_F1",
+    "to": "STAIR_B_02_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_02_F2",
+    "to": "STAIR_B_02_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_03_F0",
+    "to": "STAIR_B_03_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_03_F1",
+    "to": "STAIR_B_03_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_03_F2",
+    "to": "STAIR_B_03_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_04_F0",
+    "to": "STAIR_B_04_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_04_F1",
+    "to": "STAIR_B_04_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_B_04_F2",
+    "to": "STAIR_B_04_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "B005",
+    "to": "STAIR_B_02_F0",
+    "weight": 18,
+    "type": "horizontal"
+  },
+  {
+    "from": "B021",
+    "to": "STAIR_B_04_F0",
+    "weight": 20,
+    "type": "horizontal"
+  },
+  {
+    "from": "B016",
+    "to": "STAIR_B_03_F0",
+    "weight": 28,
+    "type": "horizontal"
+  },
+  {
+    "from": "B015",
+    "to": "STAIR_B_01_F0",
+    "weight": 24,
+    "type": "horizontal"
+  },
+  {
+    "from": "B018",
+    "to": "B019",
+    "weight": 38,
+    "type": "horizontal"
+  },
+  {
+    "from": "B019",
+    "to": "B020",
+    "weight": 14,
+    "type": "horizontal"
+  },
+  {
+    "from": "B020",
+    "to": "B022",
+    "weight": 12,
+    "type": "horizontal"
+  },
+  {
+    "from": "B022",
+    "to": "B021",
+    "weight": 13,
+    "type": "horizontal"
+  },
+  {
+    "from": "B021",
+    "to": "B001",
+    "weight": 34,
+    "type": "horizontal"
+  },
+  {
+    "from": "B001",
+    "to": "B002",
+    "weight": 20,
+    "type": "horizontal"
+  },
+  {
+    "from": "B002",
+    "to": "B003",
+    "weight": 14,
+    "type": "horizontal"
+  },
+  {
+    "from": "B003",
+    "to": "B004",
+    "weight": 8,
+    "type": "horizontal"
+  },
+  {
+    "from": "B002",
+    "to": "B004",
+    "weight": 19,
+    "type": "horizontal"
+  },
+  {
+    "from": "B004",
+    "to": "B005",
+    "weight": 10,
+    "type": "horizontal"
+  },
+  {
+    "from": "B005",
+    "to": "B006",
+    "weight": 40,
+    "type": "horizontal"
+  },
+  {
+    "from": "B006",
+    "to": "B007",
+    "weight": 18,
+    "type": "horizontal"
+  },
+  {
+    "from": "B006",
+    "to": "B008",
+    "weight": 20,
+    "type": "horizontal"
+  },
+  {
+    "from": "B007",
+    "to": "B009",
+    "weight": 18,
+    "type": "horizontal"
+  },
+  {
+    "from": "B007",
+    "to": "B010",
+    "weight": 20,
+    "type": "horizontal"
+  },
+  {
+    "from": "B009",
+    "to": "B016",
+    "weight": 15,
+    "type": "horizontal"
+  },
+  {
+    "from": "B010",
+    "to": "B016",
+    "weight": 12,
+    "type": "horizontal"
+  },
+  {
+    "from": "B016",
+    "to": "B017",
+    "weight": 12,
+    "type": "horizontal"
+  },
+  {
+    "from": "B017",
+    "to": "B018",
+    "weight": 34,
+    "type": "horizontal"
+  },
+  {
+    "from": "B016",
+    "to": "B011",
+    "weight": 34,
+    "type": "horizontal"
+  },
+  {
+    "from": "B011",
+    "to": "B012",
+    "weight": 25,
+    "type": "horizontal"
+  },
+  {
+    "from": "B012",
+    "to": "B013",
+    "weight": 16,
+    "type": "horizontal"
+  },
+  {
+    "from": "B013",
+    "to": "B014",
+    "weight": 6,
+    "type": "horizontal"
+  },
+  {
+    "from": "B014",
+    "to": "B015",
+    "weight": 10,
+    "type": "horizontal"
+  },
+  {
+    "from": "B001",
+    "to": "B-F0-FAC-GIRLS-WASHROOM",
+    "weight": 20,
+    "type": "horizontal"
+  },
+  {
+    "from": "B011",
+    "to": "B-F0-FAC-GIRLS-WASHROOM-B011",
+    "weight": 14,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-C-BLOCK-LOBBY",
+    "to": "C-F0-FAC-KIIT-CAFE",
+    "weight": 55,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-C-BLOCK-LOBBY",
+    "to": "C-F0-FAC-KHEL-KUD",
+    "weight": 22,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-KHEL-KUD",
+    "to": "C001",
+    "weight": 16,
+    "type": "horizontal"
+  },
+  {
+    "from": "C001",
+    "to": "STAIR_C_03_F0",
+    "weight": 9,
+    "type": "horizontal"
+  },
+  {
+    "from": "C001",
+    "to": "LIFT_C_15_16_F0",
+    "weight": 4,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-KHEL-KUD",
+    "to": "LIFT_C_17_F0",
+    "weight": 28,
+    "type": "horizontal"
+  },
+  {
+    "from": "LIFT_C_17_F0",
+    "to": "C-F0-FAC-FACULTY-LOUNGE",
+    "weight": 30,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-FACULTY-LOUNGE",
+    "to": "LIFT_C_20_F0",
+    "weight": 27,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-FACULTY-LOUNGE",
+    "to": "C011",
+    "weight": 52,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-FACULTY-LOUNGE",
+    "to": "C013",
+    "weight": 52,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-FACULTY-LOUNGE",
+    "to": "C012",
+    "weight": 90,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-FACULTY-LOUNGE",
+    "to": "LIFT_C_19_F0",
+    "weight": 32,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F0-FAC-FACULTY-LOUNGE",
+    "to": "STAIR_C_01_F0",
+    "weight": 24,
+    "type": "horizontal"
+  },
+  {
+    "from": "C012",
+    "to": "C-F0-FAC-MALE-WASHROOM",
+    "weight": 14,
+    "type": "horizontal"
+  },
+  {
+    "from": "C012",
+    "to": "C-F0-FAC-FEMALE-WASHROOM",
+    "weight": 14,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F1-FAC-OFFICE-104-106",
+    "to": "C-F1-FAC-CONFERENCE",
+    "weight": 52,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F1-FAC-OFFICE-104-106",
+    "to": "LIFT_C_20_F1",
+    "weight": 30,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F1-FAC-OFFICE-104-106",
+    "to": "STAIR_C_01_F1",
+    "weight": 34,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F1-FAC-OFFICE-104-106",
+    "to": "C101",
+    "weight": 65,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F1-FAC-OFFICE-104-106",
+    "to": "LIFT_C_19_F1",
+    "weight": 32,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F1-FAC-OFFICE-104-106",
+    "to": "LIFT_C_17_F1",
+    "weight": 25,
+    "type": "horizontal"
+  },
+  {
+    "from": "C-F1-FAC-OFFICE-104-106",
+    "to": "C-F1-FAC-CAFETERIA",
+    "weight": 25,
+    "type": "horizontal"
+  },
+  {
+    "from": "C101",
+    "to": "STAIR_C_03_F1",
+    "weight": 9,
+    "type": "horizontal"
+  },
+  {
+    "from": "C101",
+    "to": "LIFT_C_15_16_F1",
+    "weight": 4,
+    "type": "horizontal"
+  },
+  {
+    "from": "STAIR_C_02_F2",
+    "to": "C203",
+    "weight": 15,
+    "type": "horizontal"
+  },
+  {
+    "from": "C203",
+    "to": "LIFT_C_17_F2",
+    "weight": 20,
+    "type": "horizontal"
+  },
+  {
+    "from": "C203",
+    "to": "LIFT_C_19_F2",
+    "weight": 24,
+    "type": "horizontal"
+  },
+  {
+    "from": "C203",
+    "to": "LIFT_C_20_F2",
+    "weight": 16,
+    "type": "horizontal"
+  },
+  {
+    "from": "C203",
+    "to": "C211",
+    "weight": 52,
+    "type": "horizontal"
+  },
+  {
+    "from": "C203",
+    "to": "C213",
+    "weight": 52,
+    "type": "horizontal"
+  },
+  {
+    "from": "C211",
+    "to": "C213",
+    "weight": 8,
+    "type": "horizontal"
+  },
+  {
+    "from": "C213",
+    "to": "LIFT_C_20_F2",
+    "weight": 20,
+    "type": "horizontal"
+  },
+  {
+    "from": "LIFT_C_17_F2",
+    "to": "C-F2-FAC-LIBRARY",
+    "weight": 40,
+    "type": "horizontal"
+  },
+  {
+    "from": "LIFT_C_17_F3",
+    "to": "C-F3-FAC-LIBRARY",
+    "weight": 40,
+    "type": "horizontal"
+  },
+  {
+    "from": "LIFT_C_17_F2",
+    "to": "C201",
+    "weight": 45,
+    "type": "horizontal"
+  },
+  {
+    "from": "C201",
+    "to": "STAIR_C_03_F2",
+    "weight": 9,
+    "type": "horizontal"
+  },
+  {
+    "from": "C201",
+    "to": "LIFT_C_15_16_F2",
+    "weight": 4,
+    "type": "horizontal"
+  },
+  {
+    "from": "A001",
+    "to": "STAIR_A_02_F0",
+    "weight": 14,
+    "type": "horizontal"
+  },
+  {
+    "from": "STAIR_A_01_F0",
+    "to": "STAIR_A_01_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_A_01_F1",
+    "to": "STAIR_A_01_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_A_01_F2",
+    "to": "STAIR_A_01_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_A_02_F0",
+    "to": "STAIR_A_02_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_A_02_F1",
+    "to": "STAIR_A_02_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_A_02_F2",
+    "to": "STAIR_A_02_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_01_F0",
+    "to": "STAIR_C_01_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_01_F1",
+    "to": "STAIR_C_01_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_01_F2",
+    "to": "STAIR_C_01_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_02_F0",
+    "to": "STAIR_C_02_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_02_F1",
+    "to": "STAIR_C_02_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_02_F2",
+    "to": "STAIR_C_02_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_03_F0",
+    "to": "STAIR_C_03_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_03_F1",
+    "to": "STAIR_C_03_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_03_F2",
+    "to": "STAIR_C_03_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_04_F0",
+    "to": "STAIR_C_04_F1",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_04_F1",
+    "to": "STAIR_C_04_F2",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "STAIR_C_04_F2",
+    "to": "STAIR_C_04_F3",
+    "weight": 26,
+    "type": "stair"
+  },
+  {
+    "from": "A-F0-JUNC-RIGHT-REPORTED",
+    "to": "A015",
+    "weight": 17,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 1,
+      "notes": "A cumulative route step 3; positions 74->91; measured segment; endpoint IDs mapped from owner-confirmed route landmarks."
+    }
+  },
+  {
+    "from": "A015",
+    "to": "A014",
+    "weight": 12,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 2,
+      "notes": "A cumulative route step 4; positions 91->103; measured segment."
+    }
+  },
+  {
+    "from": "A014",
+    "to": "A-F0-JUNC-LEFT-REPORTED",
+    "weight": 12,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 3,
+      "notes": "A cumulative route step 5; positions 103->115; measured segment; reported left junction retained as its own route-position node."
+    }
+  },
+  {
+    "from": "A-F0-JUNC-A013-A012-REPORTED",
+    "to": "A011",
+    "weight": 18,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 4,
+      "notes": "A cumulative route step 8; positions 145->163; A013/A012 corridor position remains a separate junction, not merged with either room."
+    }
+  },
+  {
+    "from": "A-F0-LIFT-04",
+    "to": "A006",
+    "weight": 12,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 5,
+      "notes": "A cumulative route step 14; positions 237->249; owner clarification maps the composite \u201cA006 / left staircase\u201d landmark to A006; Lift 4 is a same-floor horizontal landmark only."
+    }
+  },
+  {
+    "from": "A-F0-FAC-GENTS-WASHROOM",
+    "to": "A-F0-JUNC-A018-A017-REPORTED",
+    "weight": 5,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 6,
+      "notes": "A cumulative route step 24; positions 346->351; measured segment."
+    }
+  },
+  {
+    "from": "A-F0-JUNC-A018-A017-REPORTED",
+    "to": "A016",
+    "weight": 12,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 7,
+      "notes": "A cumulative route step 25; positions 351->363; owner-confirmed A016/A018/A017 corridor arrangement; junction remains distinct."
+    }
+  },
+  {
+    "from": "A016",
+    "to": "A-F0-FAC-STAFF-TOILET",
+    "weight": 10,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 8,
+      "notes": "A cumulative route step 26; positions 363->373; measured segment to the existing staff-toilet facility node."
+    }
+  },
+  {
+    "from": "A-F0-FAC-STAFF-TOILET",
+    "to": "A-F0-JUNC-ABC-REPORTED",
+    "weight": 20,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route, owner-reconciled route positions 2026-10-31",
+      "route_step": 9,
+      "notes": "A cumulative route step 27; positions 373->393; endpoint is the reported shared A/B/C junction; no cross-block continuation is inferred."
+    }
+  },
+  {
+    "from": "B018",
+    "to": "STAIR_C_04_F0",
+    "weight": 36,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route; owner-reconciled endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 1,
+      "cumulative_from": 0,
+      "cumulative_to": 36,
+      "mapping_basis": "The source says C-block stairs; latest owner clarification places Staircase 04 at the A/B connecting corridor, identifying it as the matching C-block staircase endpoint.",
+      "mapping_status": "owner-reconciled"
+    }
+  },
+  {
+    "from": "STAIR_C_04_F0",
+    "to": "A-F0-JUNC-RIGHT-REPORTED",
+    "weight": 38,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route; owner-reconciled endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 2,
+      "cumulative_from": 36,
+      "cumulative_to": 74,
+      "mapping_basis": "The source route continues from the C-block staircase to the right A-block junction; Staircase 04 is the C staircase located by the A/B connecting corridor.",
+      "mapping_status": "owner-reconciled"
+    }
+  },
+  {
+    "from": "A-F0-JUNC-LEFT-REPORTED",
+    "to": "B-F0-JUNC-REPORTED",
+    "weight": 23,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route; owner-reconciled endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 6,
+      "cumulative_from": 115,
+      "cumulative_to": 138,
+      "mapping_basis": "The source identifies the next landmark as the right B-block/staircase junction; the existing B-F0-JUNC-REPORTED route-position node is retained.",
+      "mapping_status": "owner-reconciled"
+    }
+  },
+  {
+    "from": "B-F0-JUNC-REPORTED",
+    "to": "A-F0-JUNC-A013-A012-REPORTED",
+    "weight": 7,
+    "type": "horizontal",
+    "metadata": {
+      "source": "A/B cumulative route; owner-reconciled endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 7,
+      "cumulative_from": 138,
+      "cumulative_to": 145,
+      "mapping_basis": "The source identifies the next landmark as the A013/A012 corridor position; the existing route-position node is retained without merging either room.",
+      "mapping_status": "owner-reconciled"
+    }
+  },
+  {
+    "from": "A005",
+    "to": "A004",
+    "weight": 19,
+    "type": "horizontal",
+    "metadata": {
+      "source": "B018 cumulative route; owner-confirmed A-block endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 17,
+      "cumulative_from": 268,
+      "cumulative_to": 287,
+      "mapping_basis": "Owner clarification maps Lift 3/A005 area to room A005 and IoT lab to room A004.",
+      "mapping_status": "owner-confirmed"
+    }
+  },
+  {
+    "from": "A004",
+    "to": "A003",
+    "weight": 12,
+    "type": "horizontal",
+    "metadata": {
+      "source": "B018 cumulative route; owner-confirmed A-block endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 18,
+      "cumulative_from": 287,
+      "cumulative_to": 299,
+      "mapping_basis": "Owner clarification maps IoT lab to A004 and Project lab to A003.",
+      "mapping_status": "owner-confirmed"
+    }
+  },
+  {
+    "from": "A003",
+    "to": "A002",
+    "weight": 5,
+    "type": "horizontal",
+    "metadata": {
+      "source": "B018 cumulative route; owner-confirmed A-block endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 19,
+      "cumulative_from": 299,
+      "cumulative_to": 304,
+      "mapping_basis": "Owner clarification maps Project lab to A003 and Research lab to A002.",
+      "mapping_status": "owner-confirmed"
+    }
+  },
+  {
+    "from": "A002",
+    "to": "A001",
+    "weight": 7,
+    "type": "horizontal",
+    "metadata": {
+      "source": "B018 cumulative route; owner-confirmed A-block endpoint mapping",
+      "source_section": "7.2 A/B route cumulative measurements",
+      "source_route_step": 20,
+      "cumulative_from": 304,
+      "cumulative_to": 311,
+      "mapping_basis": "Owner clarification maps Research lab to A002 and Lift 2/A001 area to room A001.",
+      "mapping_status": "owner-confirmed"
+    }
+  }
+]
