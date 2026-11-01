@@ -1,0 +1,762 @@
+[
+  {
+    "id": "A001",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A002",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A003",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A004",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A005",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A006",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A007",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A008",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A009",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A010",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A011",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A012",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A013",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A014",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A015",
+    "floor": 0,
+    "x": 527,
+    "y": 452,
+    "verified": true,
+    "name": "Room A015"
+  },
+  {
+    "id": "A016",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A017",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A018",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B001",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B002",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B003",
+    "floor": 0,
+    "x": 781,
+    "y": 488,
+    "verified": true,
+    "name": "Room B003"
+  },
+  {
+    "id": "B004",
+    "floor": 0,
+    "x": 833,
+    "y": 472,
+    "verified": true,
+    "name": "Room B004"
+  },
+  {
+    "id": "B005",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B006",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B007",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B008",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B009",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B010",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B011",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B012",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B013",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B014",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B015",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B016",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B017",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B018",
+    "floor": 0,
+    "x": 693,
+    "y": 493,
+    "verified": true,
+    "name": "Room B018"
+  },
+  {
+    "id": "B019",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B020",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B021",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B022",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-FAC-LADIES-WASHROOM",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-FAC-GENTS-WASHROOM",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B-F0-FAC-GIRLS-WASHROOM",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "ENTRY_A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "ENTRY_A_FROM_C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "ENTRY_B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "ENTRY_B_FROM_C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C001",
+    "floor": 0,
+    "x": 629,
+    "y": 561,
+    "verified": true,
+    "name": "Room C001"
+  },
+  {
+    "id": "C008",
+    "floor": 0,
+    "x": 625,
+    "y": 514,
+    "verified": true,
+    "name": "Room C008"
+  },
+  {
+    "id": "C011",
+    "floor": 0,
+    "x": 229,
+    "y": 689,
+    "verified": true,
+    "name": "Room C011"
+  },
+  {
+    "id": "C012",
+    "floor": 0,
+    "x": 23,
+    "y": 623,
+    "verified": true,
+    "name": "Room C012"
+  },
+  {
+    "id": "C013",
+    "floor": 0,
+    "x": 231,
+    "y": 547,
+    "verified": true,
+    "name": "Room C013"
+  },
+  {
+    "id": "C101",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C108",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C201",
+    "floor": 2,
+    "x": 673,
+    "y": 709,
+    "verified": true
+  },
+  {
+    "id": "C203",
+    "floor": 2,
+    "x": 389,
+    "y": 824,
+    "verified": true,
+    "name": "C203"
+  },
+  {
+    "id": "C208",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C211",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C213",
+    "floor": 2,
+    "x": 245,
+    "y": 667,
+    "verified": true,
+    "name": "C213"
+  },
+  {
+    "id": "C301",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C303",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C308",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C312",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F0-FAC-KIIT-CAFE",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F0-FAC-KHEL-KUD",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F0-FAC-FACULTY-LOUNGE",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F0-FAC-DG-OFFICE",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F0-FAC-CONFERENCE-HALL",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F0-FAC-C-BLOCK-LOBBY",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F1-FAC-OFFICE-104",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F1-FAC-OFFICE-105",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F1-FAC-OFFICE-106",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F1-FAC-CONFERENCE",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F1-FAC-GALLERY",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F1-FAC-CAFETERIA",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "C-F3-FAC-LIBRARY",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_15_16_F0",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_15_16_F1",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_15_16_F2",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_15_16_F3",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_17_F0",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_17_F1",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_17_F2",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_17_F3",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_18_19_F0",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_18_19_F1",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_18_19_F2",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_18_19_F3",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_20_F0",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_20_F1",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_20_F2",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "LIFT_C_20_F3",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-FAC-IOT-LAB",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-FAC-PROJECT-LAB",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-FAC-RESEARCH-LAB",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-FAC-STAFF-TOILET",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-LIFT-01",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-LIFT-02",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-LIFT-03",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-LIFT-04",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-JUNC-RIGHT-REPORTED",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-JUNC-LEFT-REPORTED",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-JUNC-A013-A012-REPORTED",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-JUNC-A018-A017-REPORTED",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "B-F0-JUNC-REPORTED",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-EXIT-REPORTED",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  },
+  {
+    "id": "A-F0-JUNC-ABC-REPORTED",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "verified": false
+  }
+]

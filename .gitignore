@@ -68,3 +68,10 @@ venv/
 
 # Environment secrets
 .env
+# Local SQLite database
+campus25.db
+
+# Frontend build files
+frontend/node_modules/
+frontend/.next/
+frontend/out/
