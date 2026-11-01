@@ -1,0 +1,1072 @@
+[
+  {
+    "id": "A001",
+    "name": "A001",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A002",
+    "name": "A002",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A003",
+    "name": "A003",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A004",
+    "name": "A004",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A005",
+    "name": "A005",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A006",
+    "name": "A006",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A007",
+    "name": "A007",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A008",
+    "name": "A008",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A009",
+    "name": "A009",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A010",
+    "name": "A010",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A011",
+    "name": "A011",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A012",
+    "name": "A012",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A013",
+    "name": "A013",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A014",
+    "name": "A014",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A015",
+    "name": "A015",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A016",
+    "name": "A016",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A017",
+    "name": "A017",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A018",
+    "name": "A018",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B001",
+    "name": "B001",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B002",
+    "name": "B002",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B003",
+    "name": "B003",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B004",
+    "name": "B004",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B005",
+    "name": "B005",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B006",
+    "name": "B006",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B007",
+    "name": "B007",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B008",
+    "name": "B008",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B009",
+    "name": "B009",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B010",
+    "name": "B010",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B011",
+    "name": "B011",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B012",
+    "name": "B012",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B013",
+    "name": "B013",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B014",
+    "name": "B014",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B015",
+    "name": "B015",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B016",
+    "name": "B016",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B017",
+    "name": "B017",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B018",
+    "name": "B018",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg", "measurement_reference": "Master Team Coordination Document section 7.1"}
+  },
+  {
+    "id": "B019",
+    "name": "B019",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B020",
+    "name": "B020",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B021",
+    "name": "B021",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "B022",
+    "name": "B022",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "A-F0-FAC-LADIES-WASHROOM",
+    "name": "Ladies' washroom",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg", "notes": "Access topology remains to be mapped."}
+  },
+  {
+    "id": "A-F0-FAC-GENTS-WASHROOM",
+    "name": "Gents' washroom",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg", "notes": "Access topology remains to be mapped."}
+  },
+  {
+    "id": "B-F0-FAC-GIRLS-WASHROOM",
+    "name": "Girls' washroom",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg", "notes": "Access topology remains to be mapped."}
+  },
+  {
+    "id": "ENTRY_A",
+    "name": "A-block entry",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "entrance_exit",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "ENTRY_A_FROM_C",
+    "name": "Entry from C block to A area",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "entrance_exit",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg", "related_block": "C", "notes": "Physical endpoints and connection weight remain unresolved."}
+  },
+  {
+    "id": "ENTRY_B",
+    "name": "B-block entry",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "entrance_exit",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg"}
+  },
+  {
+    "id": "ENTRY_B_FROM_C",
+    "name": "Entry from C block to B area",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "entrance_exit",
+    "metadata": {"status": "source-confirmed", "source": "WhatsApp Image 2026-10-03 at 11.59.07.jpeg", "related_block": "C", "notes": "Physical endpoints and connection weight remain unresolved."}
+  },
+  {
+    "id": "C001",
+    "name": "C001",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C008",
+    "name": "C008",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C011",
+    "name": "C011",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C012",
+    "name": "C012",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C013",
+    "name": "C013",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C101",
+    "name": "C101",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2"}
+  },
+  {
+    "id": "C108",
+    "name": "C108",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2"}
+  },
+  {
+    "id": "C201",
+    "name": "C201",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3"}
+  },
+  {
+    "id": "C203",
+    "name": "C203",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2"}
+  },
+  {
+    "id": "C208",
+    "name": "C208",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3"}
+  },
+  {
+    "id": "C211",
+    "name": "C211",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2"}
+  },
+  {
+    "id": "C213",
+    "name": "C213",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2"}
+  },
+  {
+    "id": "C301",
+    "name": "C301",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 4"}
+  },
+  {
+    "id": "C303",
+    "name": "C303",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3"}
+  },
+  {
+    "id": "C308",
+    "name": "C308",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 4"}
+  },
+  {
+    "id": "C312",
+    "name": "C312",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "room",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3"}
+  },
+  {
+    "id": "C-F0-FAC-KIIT-CAFE",
+    "name": "KIIT Cafe",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C-F0-FAC-KHEL-KUD",
+    "name": "Khel Kud Area",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C-F0-FAC-FACULTY-LOUNGE",
+    "name": "Faculty Lounge",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C-F0-FAC-DG-OFFICE",
+    "name": "DG Office",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C-F0-FAC-CONFERENCE-HALL",
+    "name": "Conference Hall",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C-F0-FAC-C-BLOCK-LOBBY",
+    "name": "C Block Lobby",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1"}
+  },
+  {
+    "id": "C-F1-FAC-OFFICE-104",
+    "name": "C104 office",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 8.2", "notes": "Exact map placement remains pending."}
+  },
+  {
+    "id": "C-F1-FAC-OFFICE-105",
+    "name": "C105 office",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 8.2", "notes": "Exact map placement remains pending."}
+  },
+  {
+    "id": "C-F1-FAC-OFFICE-106",
+    "name": "C106 office",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 8.2", "notes": "Exact map placement remains pending."}
+  },
+  {
+    "id": "C-F1-FAC-CONFERENCE",
+    "name": "Conference",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 8.2", "notes": "Exact map label and placement remain pending."}
+  },
+  {
+    "id": "C-F1-FAC-GALLERY",
+    "name": "Gallery",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 8.2", "notes": "Exact map label and placement remain pending."}
+  },
+  {
+    "id": "C-F1-FAC-CAFETERIA",
+    "name": "Cafeteria",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 8.2", "notes": "Exact map label and placement remain pending."}
+  },
+  {
+    "id": "C-F3-FAC-LIBRARY",
+    "name": "Library",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, pages 3-4"}
+  },
+  {
+    "id": "LIFT_C_15_16_F0",
+    "name": "Lifts 15/16",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_15_16_F1",
+    "name": "Lifts 15/16",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_15_16_F2",
+    "name": "Lifts 15/16",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_15_16_F3",
+    "name": "Lifts 15/16",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 4", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_17_F0",
+    "name": "Lift 17",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_17_F1",
+    "name": "Lift 17",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_17_F2",
+    "name": "Lift 17",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_17_F3",
+    "name": "Lift 17",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 4", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_18_19_F0",
+    "name": "Lifts 18/19",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_18_19_F1",
+    "name": "Lifts 18/19",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_18_19_F2",
+    "name": "Lifts 18/19",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_18_19_F3",
+    "name": "Lifts 18/19",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 4", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_20_F0",
+    "name": "Lift 20",
+    "block": "C",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 1", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_20_F1",
+    "name": "Lift 20",
+    "block": "C",
+    "floor": 1,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 2", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_20_F2",
+    "name": "Lift 20",
+    "block": "C",
+    "floor": 2,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 3", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "LIFT_C_20_F3",
+    "name": "Lift 20",
+    "block": "C",
+    "floor": 3,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "source-confirmed", "source": "C- Block Map_261003_142107.pdf, page 4", "routing": "metadata-only; no vertical graph connector"}
+  },
+  {
+    "id": "A-F0-FAC-IOT-LAB",
+    "name": "IoT lab",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Route description only; exact map label and access point pending."}
+  },
+  {
+    "id": "A-F0-FAC-PROJECT-LAB",
+    "name": "Project lab",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Route description only; exact map label and access point pending."}
+  },
+  {
+    "id": "A-F0-FAC-RESEARCH-LAB",
+    "name": "Research lab",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Route description only; exact map label and access point pending."}
+  },
+  {
+    "id": "A-F0-FAC-STAFF-TOILET",
+    "name": "Staff toilet",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "facility",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Route description only; exact map label and access point pending."}
+  },
+  {
+    "id": "A-F0-LIFT-01",
+    "name": "Lift 1",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "routing": "metadata-only; do not merge with C-block lift labels without evidence"}
+  },
+  {
+    "id": "A-F0-LIFT-02",
+    "name": "Lift 2",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "routing": "metadata-only; do not merge with C-block lift labels without evidence"}
+  },
+  {
+    "id": "A-F0-LIFT-03",
+    "name": "Lift 3",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "routing": "metadata-only; do not merge with C-block lift labels without evidence"}
+  },
+  {
+    "id": "A-F0-LIFT-04",
+    "name": "Lift 4",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "lift_metadata",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "routing": "metadata-only; do not merge with C-block lift labels without evidence"}
+  },
+  {
+    "id": "A-F0-JUNC-RIGHT-REPORTED",
+    "name": "Right A-block junction",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "corridor_junction",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Provisional route description; exact junction identity pending."}
+  },
+  {
+    "id": "A-F0-JUNC-LEFT-REPORTED",
+    "name": "Left A-block junction",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "corridor_junction",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Provisional route description; exact junction identity pending."}
+  },
+  {
+    "id": "A-F0-JUNC-A013-A012-REPORTED",
+    "name": "A013/A012 corridor position",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "corridor_junction",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Opposite rooms remain separate; exact corridor node pending."}
+  },
+  {
+    "id": "A-F0-JUNC-A018-A017-REPORTED",
+    "name": "A018/A017 corridor position",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "corridor_junction",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Opposite/corridor position requires map topology reconciliation."}
+  },
+  {
+    "id": "B-F0-JUNC-REPORTED",
+    "name": "B-block junction",
+    "block": "B",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "corridor_junction",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Provisional route description; exact junction identity pending."}
+  },
+  {
+    "id": "A-F0-EXIT-REPORTED",
+    "name": "A-block exit route position",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "entrance_exit",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "notes": "Route description only; exact exit node pending."}
+  },
+  {
+    "id": "A-F0-JUNC-ABC-REPORTED",
+    "name": "A/B/C block intersection",
+    "block": "A",
+    "floor": 0,
+    "x": null,
+    "y": null,
+    "type": "corridor_junction",
+    "metadata": {"status": "provisional-transcription", "source": "KIIT_CAMPUS25_Navigation_System_Master_Team_Document_Updated.docx", "source_section": "section 7.2", "related_blocks": ["B", "C"], "notes": "Physical endpoints and cross-block connections remain unresolved."}
+  }
+]

@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #080F20;
-  --foreground: #F0F7FF;
-  --surface: rgba(13, 25, 46, 0.86);
-  --surface-raised: rgba(18, 36, 59, 0.93);
-  --border: rgba(125, 190, 255, 0.20);
-  --muted: #A8C4DF;
-  --accent: #62B6FF;
-  --accent-strong: #9AD5FF;
-  --success: #62B6FF;
+  --background: #F8FAFC;
+  --foreground: #1E293B;
+  --surface: #FFFFFF;
+  --surface-raised: #F1F5F9;
+  --border: #E2E8F0;
+  --muted: #64748B;
+  --accent: #2563EB;
+  --accent-strong: #1D4ED8;
+  --success: #15803D;
   --font-sans: Arial, Helvetica, sans-serif;
   --font-mono: monospace;
 }
@@ -54,7 +54,7 @@ button {
 }
 
 select {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 button:focus-visible,
@@ -65,7 +65,7 @@ input:focus-visible {
 }
 
 ::selection {
-  color: #080F20;
+  color: #FFFFFF;
   background: var(--accent);
 }
 
@@ -81,24 +81,19 @@ input:focus-visible {
   position: fixed;
   z-index: -2;
   inset: 0;
-  content: "";
-  background-image: url("/kiit-campus.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: blur(7px);
-  transform: scale(1.04);
+  content: '';
+  background: var(--background);
+
 }
 
 .campus-atmosphere::after {
   position: fixed;
   z-index: -1;
   inset: 0;
-  content: "";
-  background:
-    linear-gradient(115deg, rgba(5, 12, 28, 0.95), rgba(10, 28, 54, 0.80)),
-    linear-gradient(rgba(12, 40, 72, 0.30), rgba(5, 12, 28, 0.90));
+  content: '';
+  background: transparent;
   pointer-events: none;
+
 }
 
 .glass-panel {

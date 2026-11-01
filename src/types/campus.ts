@@ -7,8 +7,8 @@ export interface Location {
   name: string; // human-readable display name
   block: string; // campus block, e.g. "A", "B", "C"
   floor: number; // floor number (0-3)
-  x: number; // SVG/map x-coordinate
-  y: number; // SVG/map y-coordinate
+  x: number | null; // SVG/map x-coordinate
+  y: number | null; // SVG/map y-coordinate
   type?: string; // optional node type; allowed values are NOT frozen
 }
 

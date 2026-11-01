@@ -1,8 +1,10 @@
-// The ONLY place the frontend talks to the backend.
+﻿// The ONLY place the frontend talks to the backend.
 // Mock mode (default) reads src/mocks/mockCampus.ts. Real mode calls the frozen API contract.
 // Phase 4: connect the real endpoints, then delete the mock branches and the mock file.
 import type { Location, RouteRequest, RouteResponse } from "@/types/campus";
 import { MOCK_LOCATIONS, getMockRoute } from "@/mocks/mockCampus";
+import locationsData from "@/data/locations.json";
+
 
 // Set NEXT_PUBLIC_USE_MOCK=false in .env.local to call the real backend.
 export const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK !== "false";
@@ -19,10 +21,70 @@ export class ApiError extends Error {
 
 /** GET /locations - the canonical location list. */
 export async function getLocations(): Promise<Location[]> {
-  if (USE_MOCK) return MOCK_LOCATIONS;
+  if (USE_MOCK) {
+    const canonical = locationsData as Location[];
+    const allLocations = [
+      ...canonical,
+      ...MOCK_LOCATIONS.filter(
+        (mockLocation) => !canonical.some((location) => location.id === mockLocation.id)
+      ),
+    ];
+
+
+    let savedPoints: {
+      id: string;
+      x: number;
+      y: number;
+      floor: number;
+    }[] = [];
+
+    if (typeof window !== "undefined") {
+      try {
+        const saved = localStorage.getItem("kiit-map-inspector-points-v1");
+        if (saved) {
+          const parsed: unknown = JSON.parse(saved);
+          if (Array.isArray(parsed)) {
+            savedPoints = parsed.filter(
+              (point): point is { id: string; x: number; y: number; floor: number } =>
+                point !== null &&
+                typeof point === "object" &&
+                typeof point.id === "string" &&
+                typeof point.x === "number" &&
+                typeof point.y === "number" &&
+                typeof point.floor === "number"
+            );
+          }
+        }
+      } catch {
+        savedPoints = [];
+      }
+    }
+
+
+    const savedById = new Map(savedPoints.map((point) => [point.id, point]));
+    const mockById = new Map(MOCK_LOCATIONS.map((point) => [point.id, point]));
+
+    return allLocations.map((location) => {
+      const savedPoint = savedById.get(location.id);
+      const mockPoint = mockById.get(location.id);
+
+      return {
+        ...location,
+        floor: savedPoint?.floor ?? location.floor,
+        x: savedPoint?.x ?? location.x ?? mockPoint?.x ?? null,
+        y: savedPoint?.y ?? location.y ?? mockPoint?.y ?? null,
+      };
+    });
+  }
+
   const response = await fetch(API_BASE_URL + "/locations");
-  if (!response.ok) throw new ApiError(response.status, "GET /locations failed");
-  return (await response.json()) as Location[];
+
+  if (!response.ok) {
+    throw new ApiError(response.status, "GET /locations failed");
+  }
+
+  const data = (await response.json()) as { locations: Location[] };
+  return data.locations;
 }
 
 /**
