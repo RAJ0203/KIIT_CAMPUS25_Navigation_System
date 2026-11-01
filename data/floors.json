@@ -1,0 +1,162 @@
+{
+  "floors": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "stairCost": 26,
+  "connectors": [
+    {
+      "from": "STAIR_B_01_F0",
+      "to": "STAIR_B_01_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_01_F1",
+      "to": "STAIR_B_01_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_01_F2",
+      "to": "STAIR_B_01_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_02_F0",
+      "to": "STAIR_B_02_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_02_F1",
+      "to": "STAIR_B_02_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_02_F2",
+      "to": "STAIR_B_02_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_03_F0",
+      "to": "STAIR_B_03_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_03_F1",
+      "to": "STAIR_B_03_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_03_F2",
+      "to": "STAIR_B_03_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_04_F0",
+      "to": "STAIR_B_04_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_04_F1",
+      "to": "STAIR_B_04_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_B_04_F2",
+      "to": "STAIR_B_04_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_A_01_F0",
+      "to": "STAIR_A_01_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_A_01_F1",
+      "to": "STAIR_A_01_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_A_01_F2",
+      "to": "STAIR_A_01_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_A_02_F0",
+      "to": "STAIR_A_02_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_A_02_F1",
+      "to": "STAIR_A_02_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_A_02_F2",
+      "to": "STAIR_A_02_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_01_F0",
+      "to": "STAIR_C_01_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_01_F1",
+      "to": "STAIR_C_01_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_01_F2",
+      "to": "STAIR_C_01_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_02_F0",
+      "to": "STAIR_C_02_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_02_F1",
+      "to": "STAIR_C_02_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_02_F2",
+      "to": "STAIR_C_02_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_03_F0",
+      "to": "STAIR_C_03_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_03_F1",
+      "to": "STAIR_C_03_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_03_F2",
+      "to": "STAIR_C_03_F3",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_04_F0",
+      "to": "STAIR_C_04_F1",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_04_F1",
+      "to": "STAIR_C_04_F2",
+      "weight": 26
+    },
+    {
+      "from": "STAIR_C_04_F2",
+      "to": "STAIR_C_04_F3",
+      "weight": 26
+    }
+  ],
+  "connector_policy": "Metadata mirror only. Runtime graph loader must load staircase transitions from data/edges.json exactly once; do not append floors.json connectors to adjacency if edges.json is already loaded."
+}

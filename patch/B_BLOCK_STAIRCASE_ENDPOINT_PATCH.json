@@ -1,0 +1,39 @@
+{
+  "description": "Replace the two existing B-block ground-floor horizontal staircase-approach edge endpoints. Preserve weights and edge types.",
+  "replacements": [
+    {
+      "match": {
+        "from": "B021",
+        "to": "STAIR_B_01_F0",
+        "weight": 20,
+        "type": "horizontal"
+      },
+      "replace": {
+        "from": "B021",
+        "to": "STAIR_B_04_F0",
+        "weight": 20,
+        "type": "horizontal"
+      }
+    },
+    {
+      "match": {
+        "from": "B015",
+        "to": "STAIR_B_04_F0",
+        "weight": 24,
+        "type": "horizontal"
+      },
+      "replace": {
+        "from": "B015",
+        "to": "STAIR_B_01_F0",
+        "weight": 24,
+        "type": "horizontal"
+      }
+    }
+  ],
+  "constraints": [
+    "Do not add duplicate edges; replace the existing records.",
+    "Do not change either weight.",
+    "Do not modify vertical staircase edges or staircase node IDs.",
+    "Keep the existing edge status/provenance fields when applying the endpoint replacement."
+  ]
+}
