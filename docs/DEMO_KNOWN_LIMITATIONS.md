@@ -48,15 +48,19 @@ An isolated location is not automatically an error. Lift metadata locations, for
 
 ## 3. Upper-floor inventory is a separate task
 
-The supplied A/B floor plans show 120 upper-floor room labels that are not currently represented as A/B room nodes in the current `locations.json`:
+The supplied A/B floor plans show **120 upper-floor room labels** that are not currently represented as nodes in the current `locations.json`.
 
-- A-block: 18 rooms on each of Floors 1, 2 and 3 — 54 rooms.
-- B-block: 22 rooms on each of Floors 1, 2 and 3 — 66 rooms.
-- Total: 120 proposed room records.
+- **A Block:** 18 room labels on each of Floors 1, 2 and 3 — 54 rooms.
+- **B Block:** 22 room labels on each of Floors 1, 2 and 3 — 66 rooms.
+- **Total:** 120 map-identified upper-floor room labels.
 
-The floor plans also show upper-floor toilet/facility locations. These are candidates for a separate inventory and review; their canonical IDs, exact labels and access positions must be confirmed before adding records.
+This is an inventory identified from the supplied floor plans only. The canonical room inventory, exact identifiers, and physical access positions must be verified before adding these rooms to `locations.json` or creating corresponding graph edges.
 
-**Important:** Preparing the room and facility inventory does not automatically establish routing connectivity. Do not create horizontal edges or copy ground-floor weights merely because the upper-floor layouts look similar.
+The floor plans also show upper-floor toilet and facility locations. These are candidates for a separate inventory and review; their canonical IDs, exact labels and access positions must be confirmed before adding records.
+
+**Important:** Identifying rooms and facilities from floor plans does not automatically establish routing connectivity. Do not create horizontal edges or copy ground-floor weights merely because the upper-floor layouts look similar.
+
+This inventory and access-verification work is planned for the post-demo phase.
 
 ## 4. Staircase and lift rules
 
