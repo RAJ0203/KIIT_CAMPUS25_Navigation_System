@@ -21,9 +21,9 @@ export default function NavigationDashboard() {
   const [loading, setLoading] = useState(true);
   const [searching, setSearching] = useState(false);
   const [error, setError] = useState("");
-  const [mapPage, setMapPage] = useState(1);
   const [activeFloor, setActiveFloor] = useState(0);
   const [playKey, setPlayKey] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [token, setToken] = useState<string | null>(null);
   const [authUser, setAuthUser] = useState<AuthUser | null>(null);
 
@@ -55,29 +55,58 @@ export default function NavigationDashboard() {
   }, []);
 
 
+  // Reset playback whenever a new route is received.
+useEffect(() => {
+    setPlayKey(0);
+    setIsPlaying(false);
+  }, [route]);
+
+  // Animate through the route only when the user starts navigation.
   useEffect(() => {
-    if (!route || route.path.length === 0) {
-      setPlayKey(0);
+    if (!isPlaying || !route || route.path.length === 0) {
       return;
     }
 
-    let step = 0;
-    setPlayKey(0);
+    const maxStep = route.path.length - 1;
 
     const timer = window.setInterval(() => {
-      step += 0.05;
-
-      if (step >= route.path.length - 1) {
-        setPlayKey(route.path.length - 1);
-        window.clearInterval(timer);
-        return;
-      }
-
-      setPlayKey(step);
+      setPlayKey((current) => Math.min(current + 0.05, maxStep));
     }, 50);
 
     return () => window.clearInterval(timer);
-  }, [route]);
+  }, [isPlaying, route]);
+
+  // Stop playback when the destination is reached.
+  useEffect(() => {
+    if (
+      route &&
+      isPlaying &&
+      playKey >= route.path.length - 1
+    ) {
+      setIsPlaying(false);
+    }
+  }, [playKey, isPlaying, route]);
+
+  // Automatically display the floor of the current waypoint.
+  useEffect(() => {
+    if (!route || route.path.length === 0) {
+      return;
+    }
+
+    const currentIndex = Math.min(
+      Math.floor(playKey),
+      route.path.length - 1
+    );
+
+    const currentId = route.path[currentIndex];
+    const currentLocation = locations.find(
+      (location) => location.id === currentId
+    );
+
+    if (currentLocation) {
+      setActiveFloor(currentLocation.floor);
+    }
+  }, [route, playKey, locations]);
 
 
   const selectedSource = locations.find((item) => item.id === source);
@@ -88,6 +117,46 @@ export default function NavigationDashboard() {
     const byId = new Map(locations.map((location) => [location.id, location]));
     return route.path.map((id) => byId.get(id)).filter((item): item is Location => Boolean(item));
   }, [route, locations]);
+
+  function handleStartNavigation() {
+    if (!route || route.path.length === 0) return;
+
+    setPlayKey(0);
+
+    const firstLocation = locations.find(
+      (location) => location.id === route.path[0]
+    );
+
+    if (firstLocation) {
+      setActiveFloor(firstLocation.floor);
+    }
+
+    setIsPlaying(true);
+  }
+
+  function handlePauseNavigation() {
+    setIsPlaying(false);
+  }
+
+  function handleReplayNavigation() {
+    if (!route || route.path.length === 0) return;
+
+    setPlayKey(0);
+
+    const firstLocation = locations.find(
+      (location) => location.id === route.path[0]
+    );
+
+    if (firstLocation) {
+      setActiveFloor(firstLocation.floor);
+    }
+
+    setIsPlaying(true);
+  }
+
+  const currentWaypointIndex = route
+    ? Math.min(Math.floor(playKey), route.path.length - 1)
+    : -1;
 
   async function handleFindRoute() {
     setError("");
@@ -259,11 +328,11 @@ export default function NavigationDashboard() {
               <h2>Campus map <span className="map-live-dot" /></h2>
             </div>
             <label className="map-chip">
-              MAP PAGE
+              FLOOR
               <select
-                value={mapPage}
-                onChange={(event) => setMapPage(Number(event.target.value))}
-                aria-label="Select campus map page"
+                value={activeFloor}
+                onChange={(event) => setActiveFloor(Number(event.target.value))}
+                aria-label="Select campus floor"
                 style={{
                   marginLeft: "10px",
                   background: "transparent",
@@ -273,10 +342,10 @@ export default function NavigationDashboard() {
                   font: "inherit",
                 }}
               >
-                <option value={1}>Page 1</option>
-                <option value={2}>Page 2</option>
-                <option value={3}>Page 3</option>
-                <option value={4}>Page 4</option>
+                <option value={0}>Ground</option>
+                <option value={1}>First</option>
+                <option value={2}>Second</option>
+                <option value={3}>Third</option>
               </select>
             </label>
           </div>
@@ -324,6 +393,47 @@ export default function NavigationDashboard() {
                   <strong>{route.path.length}</strong>
                 </div>
               </div>
+              <div className="navigation-controls">
+                {!isPlaying && playKey === 0 && (
+                  <button
+                    type="button"
+                    className="navigation-button navigation-primary"
+                    onClick={() => setIsPlaying(true)}
+                  >
+                    ▶ Start Navigation
+                  </button>
+                )}
+
+                {isPlaying && (
+                  <button
+                    type="button"
+                    className="navigation-button navigation-primary"
+                    onClick={handlePauseNavigation}
+                  >
+                    Ⅱ Pause
+                  </button>
+                )}
+
+                {!isPlaying && playKey > 0 && playKey < route.path.length - 1 && (
+                  <button
+                    type="button"
+                    className="navigation-button navigation-primary"
+                    onClick={() => setIsPlaying(true)}
+                  >
+                    ▶ Resume
+                  </button>
+                )}
+
+                {!isPlaying && playKey >= route.path.length - 1 && (
+                  <button
+                    type="button"
+                    className="navigation-button navigation-primary"
+                    onClick={handleReplayNavigation}
+                  >
+                    ↻ Replay Navigation
+                  </button>
+                )}
+              </div>
               <div className="waypoint-heading">
                 <h4>Route sequence</h4>
                 <span>{route.path.length} nodes returned</span>
@@ -332,7 +442,10 @@ export default function NavigationDashboard() {
                 {route.path.map((id, index) => {
                   const location = routeLocations[index];
                   return (
-                    <li key={`${id}-${index}`}>
+                    <li
+                      key={`${id}-${index}`}
+                      className={index === currentWaypointIndex ? "waypoint-active" : ""}
+                    >
                       <span className={`waypoint-number ${index === 0 ? "waypoint-first" : index === route.path.length - 1 ? "waypoint-last" : ""}`}>
                         {index === 0 ? "S" : index === route.path.length - 1 ? "D" : String(index).padStart(2, "0")}
                       </span>

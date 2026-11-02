@@ -194,3 +194,46 @@
     padding: 26px;
   }
 }
+
+/* Navigation playback controls */
+
+.navigation-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.navigation-button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-size: 11px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.navigation-primary {
+  background: #176b4b;
+  color: #fff;
+}
+
+.navigation-primary:hover {
+  background: #10563c;
+  transform: translateY(-1px);
+}
+
+.waypoint-active {
+  background: #eef7f0;
+  border-radius: 8px;
+}
+
+.waypoint-active .waypoint-number {
+  background: #176b4b;
+  color: #fff;
+}
+
+.waypoint-active .waypoint-copy strong {
+  color: #176b4b;
+}
