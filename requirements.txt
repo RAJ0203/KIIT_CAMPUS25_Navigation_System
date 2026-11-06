@@ -1,7 +1,9 @@
 # Core backend
 fastapi
+uvicorn
 sqlalchemy
 PyJWT
+python-dotenv
 
 # Testing
 pytest
